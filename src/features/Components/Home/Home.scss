@@ -1,13 +1,57 @@
 @import '../../../constants.scss';
 
 div.main-page {
+	position: relative;
+	min-width: 1920px;
 	min-height: 600px;
 	background-image: url('../../../../public/mainpage.png');
 	background-repeat: no-repeat;
-	background-size: auto 100%;
-	background-position: center;
+	background-size: contain;
+	background-position: top -69px left 0px;
+	div.logo {
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 298px;
+		height: 160px;
+		background-color: #fff;
+		border-radius: 0 0 40px 40px;
+		box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+		background-image: url('../../../../public/logo.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+		z-index: 10;
+		logo.arrow {
+		}
+	}
+	div.woman {
+		height: 632px;
+		width: 632px;
+		position: relative;
+		background-image: url('../../../../public/woman.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		left: 50%;
+		z-index: 5;
+		div.line {
+			position: relative;
+			width: 491.85px;
+			height: 114.4px;
+			top: 240px;
+			// left: -50%;
+			background-image: url('../../../../public/1.svg');
+			background-repeat: no-repeat;
+			// background-size: 491.85px 114.4px;
+		}
+	}
 	div.container {
+		position: absolute;
+		top: -5px;
 		max-width: 100%;
+		z-index: 0;
 		div.navigation {
 			background-color: $title;
 			box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -25,55 +69,57 @@ div.main-page {
 						cursor: pointer;
 						transition: 0.3s;
 						&::after {
+							position: relative;
 							content: '';
 							height: 2px;
 							display: none;
 							width: 0;
-							background-color: #fff;
-							margin: 0 auto;
-							transition: 0.3s;
+							background-color: $text;
+							transition: all 0.3s;
+							box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
 						}
 						&:hover {
 							color: #fff;
 							&::after {
 								display: block;
-								width: 110%;
+								width: 140%;
+								left: -20%;
+								position: relative;
+								background-color: #fff;
 							}
 						}
 					}
 				}
 				p.about-us {
 					text-align: right;
-					padding-right: 30px;
+					padding-right: 200px;
 				}
 
 				p.contacts {
-					padding-left: 30px;
-				}
-
-				div.logo {
-					width: 100%;
-					height: 160px;
-					background-color: #fff;
-					border-radius: 0 0 40px 40px;
-					box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-					background-image: url('../../../../public/logo.svg');
-					background-repeat: no-repeat;
-					background-position: center;
-					background-size: auto;
+					padding-left: 200px;
 				}
 			}
 		}
-		div.main-title {
-			div.title-wrapper {
-				background-color: rgba(0, 0, 0, 0.8);
-				height: 154px;
-				top: 259px;
-				position: relative;
-				border-radius: 0 0 20px 0;
-				h1 {
-					color: #fff;
-				}
+		div.title-wrapper {
+			width: 58%;
+			background-color: #33282d;
+			height: 154px;
+			top: 259px;
+			left: 0;
+			position: absolute;
+			border-radius: 0 0 20px 0;
+			opacity: 0.8;
+			h1 {
+				display: flex;
+				align-items: center;
+				color: #fff;
+				height: 100%;
+				margin: 0;
+				padding: 22px 0 22px 35%;
+				box-sizing: border-box;
+				font-family: $SofiaBold;
+				text-transform: uppercase;
+				font-size: 46px;
 			}
 		}
 	}

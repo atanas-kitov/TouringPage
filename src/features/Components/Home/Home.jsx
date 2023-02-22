@@ -7,30 +7,31 @@ import './Home.scss';
 const Home = () => {
 	return (
 		<div className='main-page'>
+			<div className='logo'>
+				<div className='logo-arrow'></div>
+			</div>
+			<div className='woman'>
+				<div className='line'></div>
+			</div>
 			<Container>
 				<Row className='navigation'>
-					<Col md='4' lg='5'>
+					<Col>
 						<p className='about-us'>
 							<span>За нас</span>
 						</p>
 					</Col>
-					<Col md='4' lg='2'>
-						<div className='logo'></div>
-					</Col>
-					<Col md='4' lg='5'>
+					<Col>
 						<p className='contacts'>
 							<span>Контакти</span>
 						</p>
 					</Col>
 				</Row>
-				<Row className='main-title'>
-					<Col md='8' lg='7' className='title-wrapper'>
-						<h1>
-							Открий нови <br />
-							вълнуващи места с нас!
-						</h1>
-					</Col>
-				</Row>
+				<div className='title-wrapper'>
+					<h1>
+						Открий нови <br />
+						вълнуващи места с нас!
+					</h1>
+				</div>
 			</Container>
 		</div>
 	);
