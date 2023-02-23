@@ -16,6 +16,9 @@ const Home = () => {
 			<Container>
 				<Row className='navigation'>
 					<Col>
+						<div className='hamburger'>
+							<div></div>
+						</div>
 						<p className='about-us'>
 							<span>За нас</span>
 						</p>
