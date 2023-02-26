@@ -1,0 +1,54 @@
+@import '../../../constants.scss';
+
+div#about-wrapper {
+	&::before {
+		position: absolute;
+		overflow: hidden;
+		content: '';
+		width: 150%;
+		height: 50%;
+		z-index: -1;
+		background-color: $background1;
+		background-repeat: no-repeat;
+		background-position-y: 1000px;
+		// left: -50%;
+		right: 0px;
+		top: 800px;
+		transform: matrix(0.78, -0.63, 0.63, 0.78, 0, 0);
+		opacity: 0.24;
+	}
+	div.container {
+		div.row {
+			justify-content: center;
+			div[class^='col'] {
+				h2 {
+					color: $title;
+					font-family: $SofiaBold;
+					font-size: 32px;
+					line-height: 39px;
+					text-transform: uppercase;
+					padding: 34px;
+					position: relative;
+					box-sizing: border-box;
+					letter-spacing: 0px;
+					text-align: center;
+					&::after {
+						content: '';
+						position: absolute;
+						display: block;
+						height: 2px;
+						width: 40px;
+						background-color: $title;
+						right: 0;
+					}
+				}
+				p {
+					color: $text;
+					font-family: $SofiaRegular;
+					font-size: 18px;
+					line-height: 23px;
+				}
+			}
+		}
+	}
+}

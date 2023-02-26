@@ -46,7 +46,7 @@ div.main-page {
 		width: 632px;
 		position: relative;
 		background: transparent url('../../../../public/woman.png') 0% 0% no-repeat padding-box;
-		background-position-x: -20px;
+		background-position-x: -10px;
 		left: 50%;
 		z-index: 5;
 		div.line {
@@ -54,7 +54,7 @@ div.main-page {
 			width: 491.85px;
 			height: 114.4px;
 			top: 240px;
-			left: -23%;
+			left: -24%;
 			background-image: url('../../../../public/1.svg');
 			background-repeat: no-repeat;
 			background-size: 491.85px 114.4px;
@@ -66,10 +66,6 @@ div.main-page {
 		position: absolute;
 		top: 0;
 		div.container {
-			// position: absolute;
-			// top: 0;
-			// left: 0;
-			// right: 0;
 			max-width: 100%;
 			div.navigation {
 				background-color: $title;
@@ -140,12 +136,12 @@ div.main-page {
 							}
 						}
 					}
-					p.about-us {
+					p.about-us-btn {
 						text-align: right;
 						padding-right: 200px;
 					}
 
-					p.contacts {
+					p.contacts-btn {
 						padding-left: 200px;
 					}
 				}
@@ -180,7 +176,7 @@ div.main-page {
 	div.main-page {
 		height: 490px;
 		background-position-y: -57px;
-		background-position-x: -1050px;
+		// background-position-x: -1050px;
 		background-size: auto 100%;
 		// background-position: center;
 
@@ -212,14 +208,15 @@ div.main-page {
 			top: 217px;
 			z-index: 10;
 			div.line {
-				background-color: red;
 				position: absolute;
-				width: 491.85px;
-				height: 114.4px;
-				top: 240px;
-				left: -23%;
+				width: 300px;
+				height: 70px;
+				top: 110px;
+				left: -30px;
 				background-image: url('../../../../public/1.svg');
 				background-repeat: no-repeat;
+				background-size: 85%;
+				transform: rotate(40deg);
 			}
 		}
 		div.navigation-wrapper {
@@ -298,12 +295,12 @@ div.main-page {
 								}
 							}
 						}
-						p.about-us {
+						p.about-us-btn {
 							text-align: right;
 							padding-right: 200px;
 						}
 
-						p.contacts {
+						p.contacts-btn {
 							padding-left: 200px;
 						}
 					}

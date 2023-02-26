@@ -20,12 +20,12 @@ const Home = () => {
 							<div className='hamburger'>
 								<div></div>
 							</div>
-							<p className='about-us'>
+							<p className='about-us-btn'>
 								<span>За нас</span>
 							</p>
 						</Col>
 						<Col>
-							<p className='contacts'>
+							<p className='contacts-btn'>
 								<span>Контакти</span>
 							</p>
 						</Col>
