@@ -7,6 +7,9 @@ import './About.scss';
 const About = () => {
 	return (
 		<div id='about-wrapper'>
+			<div className='woman-2'>
+				<div className='woman-2-arrow'></div>
+			</div>
 			<Container>
 				<Row>
 					<Col md={{ span: 8, offset: 1 }}>
