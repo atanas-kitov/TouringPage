@@ -1,0 +1,31 @@
+@import '../../../constants.scss';
+
+div.gallery-wrapper {
+	div.container {
+		div.row {
+			div.col {
+				h2 {
+					color: $text;
+					font-family: $SofiaBold;
+					font-size: 32px;
+					line-height: 39px;
+					text-transform: uppercase;
+					position: relative;
+					box-sizing: border-box;
+					letter-spacing: 0px;
+					text-align: center;
+					padding-bottom: 32px;
+					&::after {
+						content: '';
+						position: absolute;
+						display: block;
+						height: 2px;
+						width: 55%;
+						background-color: $text;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

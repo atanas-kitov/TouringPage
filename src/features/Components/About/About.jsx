@@ -13,6 +13,7 @@ const About = () => {
 			<Container>
 				<Row>
 					<Col md={{ span: 8, offset: 1 }}>
+						<div className='about-arrow'></div>
 						<h2>Малко повече за нас</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus excepturi vel modi
