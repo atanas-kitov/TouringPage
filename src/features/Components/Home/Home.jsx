@@ -1,44 +1,24 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './Home.scss';
+import HeroImage from '../HeroImage/HeroImage';
+import Gallery from '../Gallery/Gallery';
+import About from '../About/About';
+import ContactUs from '../ContactUs/ContactUs';
 
 const Home = () => {
+	const galleryBackgrounds = [
+		{ background: '../../../../public/slider1-1.jpg', id: 1 },
+		{ background: '../../../../public/slider1-2.jpg', id: 2 },
+		{ background: '../../../../public/slider1-3.jpg', id: 3 },
+		{ background: '../../../../public/slider1-1.jpg', id: 4 },
+	];
 	return (
-		<div className='main-page'>
-			<div className='logo'>
-				<div className='logo-arrow'></div>
-			</div>
-			<div className='woman'>
-				<div className='line'></div>
-			</div>
-			<div className='navigation-wrapper'>
-				<Container>
-					<Row className='navigation'>
-						<Col>
-							<div className='hamburger'>
-								<div></div>
-							</div>
-							<p className='about-us-btn'>
-								<span>За нас</span>
-							</p>
-						</Col>
-						<Col>
-							<p className='contacts-btn'>
-								<span>Контакти</span>
-							</p>
-						</Col>
-					</Row>
-					<div className='title-wrapper'>
-						<h1>
-							Открий нови <br />
-							вълнуващи места с нас!
-						</h1>
-					</div>
-				</Container>
-			</div>
-		</div>
+		<>
+			<HeroImage />
+			<About />
+			<Gallery galleryBackgrounds={galleryBackgrounds} />
+			<ContactUs />
+		</>
 	);
 };
 
