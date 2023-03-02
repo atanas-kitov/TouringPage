@@ -4,6 +4,7 @@ import HeroImage from '../HeroImage/HeroImage';
 import Gallery from '../Gallery/Gallery';
 import About from '../About/About';
 import ContactUs from '../ContactUs/ContactUs';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
 	const galleryBackgrounds = [
@@ -18,6 +19,7 @@ const Home = () => {
 			<About />
 			<Gallery galleryBackgrounds={galleryBackgrounds} />
 			<ContactUs />
+			<Footer />
 		</>
 	);
 };

@@ -1,0 +1,46 @@
+@import '../../../constants.scss';
+
+div.footer {
+	background-color: #58595b;
+	height: 146px;
+	margin-top: 60px;
+	div.container {
+		height: 100%;
+
+		div.row {
+			height: 100%;
+
+			div.col {
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				div.footer-logo {
+					height: 100%;
+					width: 141px;
+					background: url('../../../../public/logo.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+				div.footer-arrow {
+					background: url('../../../../public/1.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+					transform: rotate(180deg);
+					height: 100%;
+					width: 50%;
+				}
+				div.contact-list {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					align-items: flex-end;
+					justify-content: space-evenly;
+					p {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
