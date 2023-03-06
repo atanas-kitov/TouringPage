@@ -25,6 +25,46 @@ div.gallery-wrapper {
 						right: 0;
 					}
 				}
+				div.react-multi-carousel-list {
+					height: 260px;
+					padding-bottom: 100px;
+					box-sizing: content-box;
+					ul {
+						height: 100%;
+						li {
+							height: 100%;
+							padding: 0 20px;
+							div {
+								height: 100%;
+								background-size: 100% auto;
+								background-repeat: no-repeat;
+								background-position: center;
+							}
+						}
+					}
+					button {
+						bottom: 15px;
+						border: none;
+						background-repeat: no-repeat;
+						background-color: #fff;
+						background-size: contain;
+						background-position: center;
+						cursor: pointer;
+						width: 36px;
+						height: 36px;
+						&::before {
+							display: none;
+						}
+					}
+					button[class*='left'] {
+						left: 46%;
+						background-image: url('../../../../public/left.svg');
+					}
+					button[class*='right'] {
+						right: 46%;
+						background-image: url('../../../../public/right.svg');
+					}
+				}
 			}
 		}
 	}

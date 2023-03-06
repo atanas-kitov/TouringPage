@@ -8,10 +8,10 @@ import Footer from '../Footer/Footer';
 
 const Home = () => {
 	const galleryBackgrounds = [
-		{ background: '../../../../public/slider1-1.jpg', id: 1 },
-		{ background: '../../../../public/slider1-2.jpg', id: 2 },
-		{ background: '../../../../public/slider1-3.jpg', id: 3 },
-		{ background: '../../../../public/slider1-1.jpg', id: 4 },
+		{ background: './slider1-1.jpg', id: 1 },
+		{ background: './slider1-2.jpg', id: 2 },
+		{ background: './slider1-3.jpg', id: 3 },
+		{ background: './slider2-1.jpg', id: 4 },
 	];
 	return (
 		<>

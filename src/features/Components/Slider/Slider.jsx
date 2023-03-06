@@ -40,7 +40,9 @@ const Slider = ({ galleryBackgrounds }) => {
 			dotListClass='custom-dot-list-style'
 			itemClass='carousel-item-padding-40-px'>
 			{galleryBackgrounds.map((background) => (
-				<div key={background.id} style={{ backgroundImage: `url('${background.background}')` }}></div>
+				<div key={background.id} style={{ backgroundImage: `url(${background.background})` }}>
+					{/* <img src={background.background} alt='pic' /> */}
+				</div>
 			))}
 		</Carousel>
 	);
