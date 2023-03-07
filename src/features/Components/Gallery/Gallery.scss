@@ -57,11 +57,11 @@ div.gallery-wrapper {
 						}
 					}
 					button[class*='left'] {
-						left: 46%;
+						left: calc(50% - 50px);
 						background-image: url('../../../../public/left.svg');
 					}
 					button[class*='right'] {
-						right: 46%;
+						right: calc(50% - 50px);
 						background-image: url('../../../../public/right.svg');
 					}
 				}

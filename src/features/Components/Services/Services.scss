@@ -1,7 +1,8 @@
 @import '../../../constants.scss';
 
-div.services {
+div.services-wrapper {
 	div.container {
+		margin-bottom: 50px;
 		div.row {
 			div.col {
 				h2 {
@@ -26,35 +27,83 @@ div.services {
 					}
 				}
 				div.row {
-					div.card {
-						div.title {
-							background-color: $title;
-							padding: 5px 0;
-							box-sizing: border-box;
-							h3.activity {
-								color: #58595b;
-								font-family: $SofiaItalic;
-								font-size: 20px;
-								line-height: 23px;
+					div[class^='col'] {
+						margin-bottom: 40px;
+						div.services-card {
+							box-shadow: 0px 3px 6px #00000029;
+							border-radius: 0px 0px 24px 24px;
+							div.title {
+								background-color: $title;
+								padding: 5px 0;
 								box-sizing: border-box;
-								letter-spacing: 0px;
-								text-align: center;
+								h3.activity {
+									color: #58595b;
+									font-family: $SofiaItalic;
+									font-size: 20px;
+									line-height: 23px;
+									box-sizing: border-box;
+									letter-spacing: 0px;
+									text-align: center;
+								}
+								h3.location {
+									color: #fff;
+									font-family: $SofiaBold;
+									font-size: 20px;
+									line-height: 23px;
+									text-transform: uppercase;
+									box-sizing: border-box;
+									letter-spacing: 0px;
+									text-align: center;
+								}
 							}
-							h3.location {
-								color: #fff;
-								font-family: $SofiaBold;
-								font-size: 20px;
-								line-height: 23px;
-								text-transform: uppercase;
-								box-sizing: border-box;
-								letter-spacing: 0px;
-								text-align: center;
+							div.services-image {
+								height: 220px;
+								background-repeat: no-repeat;
+								background-size: cover;
 							}
-						}
-						div.services-image {
-							height: 220px;
-							background-repeat: no-repeat;
-							background-size: cover;
+							div.services-info {
+								display: flex;
+								flex-direction: column;
+								flex-wrap: nowrap;
+								align-items: flex-start;
+								position: relative;
+								div {
+									display: flex;
+									flex-direction: row;
+									flex-wrap: nowrap;
+									align-items: center;
+									padding: 0 10px;
+									box-sizing: border-box;
+									img {
+									}
+									span {
+										color: #58595b;
+										font-family: $SofiaMedium;
+										font-size: 16px;
+										line-height: 16px;
+										letter-spacing: 0px;
+										padding: 10px 5px;
+										box-sizing: border-box;
+									}
+								}
+								button {
+									position: absolute;
+									right: 10px;
+									top: 0;
+									bottom: 0;
+									height: 55%;
+									margin: auto 0;
+									font-family: $SofiaBold;
+									text-transform: uppercase;
+									font-size: 20px;
+									line-height: 23px;
+									color: #fff;
+									background-color: $title;
+									border: none;
+									box-shadow: 0px 3px 6px #00000029;
+									border-radius: 8px;
+								}
+							}
 						}
 					}
 				}
