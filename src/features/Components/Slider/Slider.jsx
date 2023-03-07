@@ -25,7 +25,7 @@ const Slider = ({ galleryBackgrounds }) => {
 			galleryBackground={galleryBackgrounds}
 			swipeable={false}
 			draggable={false}
-			showDots={false}
+			showDots={true}
 			responsive={responsive}
 			ssr={true} // means to render carousel on server-side.
 			infinite={true}
@@ -40,9 +40,7 @@ const Slider = ({ galleryBackgrounds }) => {
 			dotListClass='custom-dot-list-style'
 			itemClass='carousel-item-padding-40-px'>
 			{galleryBackgrounds.map((background) => (
-				<div key={background.id} style={{ backgroundImage: `url(${background.background})` }}>
-					{/* <img src={background.background} alt='pic' /> */}
-				</div>
+				<div key={background.id} style={{ backgroundImage: `url(${background.background})` }}></div>
 			))}
 		</Carousel>
 	);
