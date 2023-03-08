@@ -2,9 +2,13 @@ import React from 'react';
 import Col from 'react-bootstrap/esm/Col';
 import './ServiceCard.scss';
 
-const ServiceCard = ({ card }) => {
+const ServiceCard = ({ card, processData }) => {
+	const onProcessData = () => {
+		processData(card);
+	};
+
 	return (
-		<Col sm='12' md='6' xl='4'>
+		<Col sm='12' md='6' xl='4' onClick={onProcessData}>
 			<div className='services-card'>
 				<div className='title'>
 					<h3 className='activity'>{card.activity}</h3>

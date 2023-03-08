@@ -69,3 +69,25 @@ div.gallery-wrapper {
 		}
 	}
 }
+
+@media only screen and (max-width: 1024px) {
+	div.gallery-wrapper {
+		div.container {
+			div.row {
+				div.col {
+					h2 {
+						font-size: 24px;
+						line-height: 29px;
+						&::after {
+							width: 80%;
+							position: absolute;
+							margin: 0 auto;
+							left: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

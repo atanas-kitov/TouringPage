@@ -12,7 +12,7 @@ const About = () => {
 			</div>
 			<Container>
 				<Row>
-					<Col md={{ span: 8, offset: 1 }}>
+					<Col lg='12' xl={{ span: 8, offset: 1 }}>
 						<div className='about-arrow'></div>
 						<h2>Малко повече за нас</h2>
 						<p>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -20,12 +19,14 @@ const Slider = ({ galleryBackgrounds }) => {
 			slidesToSlide: 1, // optional, default to 1.
 		},
 	};
+
 	return (
 		<Carousel
 			galleryBackground={galleryBackgrounds}
 			swipeable={false}
 			draggable={false}
-			showDots={true}
+			// showDots={windowSize <= 1024 ? true : false}
+			// showDots={true}
 			responsive={responsive}
 			ssr={true} // means to render carousel on server-side.
 			infinite={true}
@@ -35,7 +36,7 @@ const Slider = ({ galleryBackgrounds }) => {
 			customTransition='all .5'
 			transitionDuration={500}
 			containerClass='carousel-container'
-			removeArrowOnDeviceType={['tablet', 'mobile']}
+			// removeArrowOnDeviceType={['tablet', 'mobile']}
 			// deviceType={this.props.deviceType}
 			dotListClass='custom-dot-list-style'
 			itemClass='carousel-item-padding-40-px'>

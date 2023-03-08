@@ -9,10 +9,10 @@ import Services from '../Services/Services';
 
 const Home = () => {
 	const galleryBackgrounds = [
-		{ background: './slider1-1.jpg', id: 1 },
-		{ background: './slider1-2.jpg', id: 2 },
-		{ background: './slider1-3.jpg', id: 3 },
-		{ background: './slider2-1.jpg', id: 4 },
+		{ background: './slider1-1.jpg', id: 101 },
+		{ background: './slider1-2.jpg', id: 102 },
+		{ background: './slider1-3.jpg', id: 103 },
+		{ background: './slider2-1.jpg', id: 104 },
 	];
 
 	const services = [
@@ -22,6 +22,9 @@ const Home = () => {
 			background: './slider2-1.jpg',
 			time: 3,
 			price: 60,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 201,
 		},
 		{
 			activity: 'Обиколка на',
@@ -29,6 +32,9 @@ const Home = () => {
 			background: './slider2-2.jpg',
 			time: 1,
 			price: 30,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 202,
 		},
 		{
 			activity: 'Обиколка на',
@@ -36,6 +42,9 @@ const Home = () => {
 			background: './slider2-3.jpg',
 			time: 2,
 			price: 40,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 203,
 		},
 		{
 			activity: 'Екскурзия до',
@@ -43,6 +52,9 @@ const Home = () => {
 			background: './slider2-4.jpg',
 			time: 3,
 			price: 60,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 204,
 		},
 		{
 			activity: 'Обиколка на',
@@ -50,6 +62,9 @@ const Home = () => {
 			background: './slider2-5.jpg',
 			time: 3,
 			price: 90,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 205,
 		},
 		{
 			activity: 'Обиколка на',
@@ -57,6 +72,9 @@ const Home = () => {
 			background: './slider2-6.jpg',
 			time: 2,
 			price: 40,
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum impedit velit libero optio id amet vitae cumque vel repellat.',
+			id: 206,
 		},
 	];
 	return (

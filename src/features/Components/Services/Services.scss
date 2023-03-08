@@ -28,6 +28,8 @@ div.services-wrapper {
 				}
 				div.row {
 					div[class^='col'] {
+						padding: 0 20px;
+						box-sizing: border-box;
 						margin-bottom: 40px;
 						div.services-card {
 							box-shadow: 0px 3px 6px #00000029;
@@ -72,10 +74,8 @@ div.services-wrapper {
 									flex-direction: row;
 									flex-wrap: nowrap;
 									align-items: center;
-									padding: 0 10px;
+									padding: 0 0 0 20px;
 									box-sizing: border-box;
-									img {
-									}
 									span {
 										color: #58595b;
 										font-family: $SofiaMedium;
@@ -88,7 +88,7 @@ div.services-wrapper {
 								}
 								button {
 									position: absolute;
-									right: 10px;
+									right: 20px;
 									top: 0;
 									bottom: 0;
 									height: 55%;
@@ -104,6 +104,28 @@ div.services-wrapper {
 									border-radius: 8px;
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	div.services-wrapper {
+		div.container {
+			div.row {
+				div.col {
+					h2 {
+						font-size: 24px;
+						line-height: 29px;
+						&::after {
+							width: 80%;
+							position: absolute;
+							margin: 0 auto;
+							left: 0;
+							right: 0;
 						}
 					}
 				}
