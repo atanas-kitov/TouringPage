@@ -17,7 +17,7 @@ const Modal = ({ visible, onCancelClick, card }) => {
 						<div className='modal-background' style={{ backgroundImage: `url(${card.background})` }}></div>
 					</div>
 					<div className='modal-description'>
-						<button onClick={onCancelClick}>X</button>
+						<button className='close' onClick={onCancelClick}></button>
 						<p>{card.description}</p>
 						<div className='modal-info'>
 							<div>

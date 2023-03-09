@@ -1,5 +1,6 @@
 import React from 'react';
 import Col from 'react-bootstrap/esm/Col';
+import { Link } from 'react-router-dom';
 import './ServiceCard.scss';
 
 const ServiceCard = ({ card, processData }) => {
@@ -8,13 +9,16 @@ const ServiceCard = ({ card, processData }) => {
 	};
 
 	return (
-		<Col sm='12' md='6' xl='4' onClick={onProcessData}>
+		<Col sm='12' md='6' xl='4'>
 			<div className='services-card'>
 				<div className='title'>
 					<h3 className='activity'>{card.activity}</h3>
 					<h3 className='location'>{card.location}</h3>
 				</div>
-				<div className='services-image' style={{ backgroundImage: `url(${card.background})` }}></div>
+				<div
+					className='services-image'
+					style={{ backgroundImage: `url(${card.background})` }}
+					onClick={onProcessData}></div>
 				<div className='services-info'>
 					<div>
 						<img src='./time.svg' alt='time' />
@@ -24,7 +28,9 @@ const ServiceCard = ({ card, processData }) => {
 						<img src='./wallet.svg' alt='price' />
 						<span>Цена: {card.price}лв.</span>
 					</div>
-					<button>Виж повече</button>
+					<Link to={`/${card.id}`} state={{ data: { card } }}>
+						Виж повече
+					</Link>
 				</div>
 			</div>
 		</Col>

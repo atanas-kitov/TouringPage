@@ -1,10 +1,7 @@
 import React from 'react';
 import './Home.scss';
-import HeroImage from '../HeroImage/HeroImage';
 import Gallery from '../Gallery/Gallery';
 import About from '../About/About';
-import ContactUs from '../ContactUs/ContactUs';
-import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -79,12 +76,9 @@ const Home = () => {
 	];
 	return (
 		<>
-			<HeroImage />
 			<About />
 			<Gallery galleryBackgrounds={galleryBackgrounds} />
 			<Services services={services} />
-			<ContactUs />
-			<Footer />
 		</>
 	);
 };

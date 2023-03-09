@@ -1,6 +1,6 @@
 @import '../../../constants.scss';
 
-div.contact-us {
+div#contact-us {
 	padding: 0 0 50px 0;
 	box-sizing: border-box;
 	div.container {
@@ -78,7 +78,7 @@ div.contact-us {
 }
 
 @media only screen and (max-width: 1510px) {
-	div.contact-us {
+	div#contact-us {
 		background-image: url('../../../../public/template.jpg');
 		background-repeat: repeat;
 		background-position: center;

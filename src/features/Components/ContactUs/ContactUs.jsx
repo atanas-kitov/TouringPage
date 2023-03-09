@@ -6,7 +6,7 @@ import './ContactUs.scss';
 
 const ContactUs = () => {
 	return (
-		<div className='contact-us'>
+		<div id='contact-us'>
 			<Container>
 				<Row>
 					<Col xs={10}>

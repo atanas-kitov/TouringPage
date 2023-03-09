@@ -21,12 +21,22 @@ const HeroImage = () => {
 								<div></div>
 							</div>
 							<p className='about-us-btn'>
-								<span>За нас</span>
+								<span
+									onClick={() => {
+										document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' });
+									}}>
+									За нас
+								</span>
 							</p>
 						</Col>
 						<Col>
 							<p className='contacts-btn'>
-								<span>Контакти</span>
+								<span
+									onClick={() => {
+										document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
+									}}>
+									Контакти
+								</span>
 							</p>
 						</Col>
 					</Row>
