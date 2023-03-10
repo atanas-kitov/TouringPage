@@ -142,6 +142,102 @@ div.services-wrapper {
 							right: 0;
 						}
 					}
+
+					div.row {
+						div[class^='col'] {
+							padding: 0 20px;
+							box-sizing: border-box;
+							margin-bottom: 40px;
+							div.services-card {
+								box-shadow: 0px 3px 6px #00000029;
+								border-radius: 0px 0px 24px 24px;
+								div.title {
+									background-color: $title;
+									padding: 5px 0;
+									box-sizing: border-box;
+									h3.activity {
+										color: #58595b;
+										font-family: $SofiaItalic;
+										font-size: 16px;
+										line-height: 23px;
+										box-sizing: border-box;
+										letter-spacing: 0px;
+										text-align: center;
+									}
+									h3.location {
+										color: #fff;
+										font-family: $SofiaBold;
+										font-size: 16px;
+										line-height: 18px;
+										text-transform: uppercase;
+										box-sizing: border-box;
+										letter-spacing: 0px;
+										text-align: center;
+									}
+								}
+								div.services-image {
+									height: 220px;
+									background-repeat: no-repeat;
+									background-size: cover;
+									cursor: pointer;
+								}
+								div.services-info {
+									display: flex;
+									flex-direction: column;
+									flex-wrap: nowrap;
+									align-items: flex-start;
+									position: relative;
+									padding: 10px 0;
+									box-sizing: border-box;
+									div {
+										display: flex;
+										flex-direction: row;
+										flex-wrap: nowrap;
+										align-items: center;
+										padding: 0 0 0 20px;
+										box-sizing: border-box;
+										span {
+											color: #58595b;
+											font-family: $SofiaMedium;
+											font-size: 13px;
+											line-height: 13px;
+											letter-spacing: 0px;
+											padding: 10px 5px;
+											box-sizing: border-box;
+										}
+									}
+									a {
+										display: flex;
+										flex-direction: column;
+										justify-content: center;
+										text-align: center;
+										text-decoration: none;
+										position: absolute;
+										right: 20px;
+										top: 0;
+										bottom: 0;
+										height: 45%;
+										margin: auto 0;
+										font-family: $SofiaBold;
+										text-transform: uppercase;
+										font-size: 16px;
+										line-height: 18px;
+										color: #fff;
+										background-color: $title;
+										padding: 5px;
+										border: none;
+										box-shadow: 0px 3px 6px #00000029;
+										border-radius: 8px;
+										cursor: pointer;
+										box-sizing: border-box;
+										&hover {
+											color: $text;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

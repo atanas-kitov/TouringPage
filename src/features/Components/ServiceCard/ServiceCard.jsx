@@ -22,7 +22,7 @@ const ServiceCard = ({ card, processData }) => {
 				<div className='services-info'>
 					<div>
 						<img src='./time.svg' alt='time' />
-						<span>Времетраене: {card.time}</span>
+						<span>Времетраене: {card.time}ч.</span>
 					</div>
 					<div>
 						<img src='./wallet.svg' alt='price' />
