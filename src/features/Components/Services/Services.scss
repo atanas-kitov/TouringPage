@@ -70,6 +70,8 @@ div.services-wrapper {
 								flex-wrap: nowrap;
 								align-items: flex-start;
 								position: relative;
+								padding: 10px 0;
+								box-sizing: border-box;
 								div {
 									display: flex;
 									flex-direction: row;
@@ -97,7 +99,7 @@ div.services-wrapper {
 									right: 20px;
 									top: 0;
 									bottom: 0;
-									height: 55%;
+									height: 50%;
 									margin: auto 0;
 									font-family: $SofiaBold;
 									text-transform: uppercase;
@@ -111,7 +113,6 @@ div.services-wrapper {
 									border-radius: 8px;
 									cursor: pointer;
 									box-sizing: border-box;
-									z-index: 100;
 									&hover {
 										color: $text;
 									}

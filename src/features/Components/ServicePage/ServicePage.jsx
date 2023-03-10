@@ -11,7 +11,7 @@ const ServicePage = () => {
 	const { data } = location.state;
 
 	return (
-		<Container className='service-page'>
+		<Container id='service-page'>
 			<Row>
 				<Col>
 					<div className='services-card'>

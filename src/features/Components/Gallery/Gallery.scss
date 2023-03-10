@@ -52,6 +52,7 @@ div.gallery-wrapper {
 						cursor: pointer;
 						width: 36px;
 						height: 36px;
+						z-index: 20;
 						&::before {
 							display: none;
 						}
