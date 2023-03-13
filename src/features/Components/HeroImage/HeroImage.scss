@@ -14,19 +14,20 @@ div.hero-image {
 		height: 632px;
 		width: 632px;
 		position: absolute;
-		background: transparent url('../../../../public/woman.png') no-repeat padding-box;
-		background-position: center;
-		right: 5%;
+		background: transparent url('../../../../public/woman.png') no-repeat;
+		background-position-x: -70px;
+		background-size: cover;
+		right: 10%;
 		z-index: 5;
 		div.line {
 			position: absolute;
 			width: 491.85px;
 			height: 114.4px;
 			top: 240px;
-			left: -31%;
+			left: -35%;
 			background-image: url('../../../../public/1.svg');
 			background-repeat: no-repeat;
-			background-size: 491.85px 114.4px;
+			background-size: 100%;
 		}
 	}
 
@@ -44,7 +45,7 @@ div.hero-image {
 			color: #fff;
 			height: 100%;
 			margin: 0;
-			padding: 22px 0 22px 35%;
+			padding: 22px 10px 22px 30%;
 			box-sizing: border-box;
 			font-family: $SofiaBold;
 			text-transform: uppercase;
@@ -53,13 +54,87 @@ div.hero-image {
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
+	div.hero-image {
+		div.woman {
+			height: 632px;
+			width: 632px;
+			right: 0;
+			div.line {
+				position: absolute;
+				width: 491.85px;
+				height: 114.4px;
+				top: 240px;
+				left: -23%;
+				background-image: url('../../../../public/1.svg');
+				background-repeat: no-repeat;
+				background-size: 85%;
+			}
+		}
+
+		div.title-wrapper {
+			width: 58%;
+			background-color: #33282d;
+			top: 259px;
+			left: 0;
+			position: absolute;
+			border-radius: 0 0 20px 0;
+			opacity: 0.8;
+			h1 {
+				display: flex;
+				align-items: center;
+				color: #fff;
+				height: 100%;
+				margin: 0;
+				padding: 22px 10px 22px 15%;
+				box-sizing: border-box;
+				font-family: $SofiaBold;
+				text-transform: uppercase;
+				font-size: 46px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199.98px) {
+	div.hero-image {
+		div.woman {
+			right: 0;
+			z-index: 5;
+			div.line {
+				display: none;
+			}
+		}
+		div.title-wrapper {
+			width: 55%;
+			background-color: #33282d;
+			top: 170px;
+			left: 0;
+			position: absolute;
+			border-radius: 0 0 20px 0;
+			opacity: 0.8;
+			h1 {
+				display: flex;
+				align-items: center;
+				color: #fff;
+				height: 100%;
+				margin: 0;
+				padding: 22px 10px 22px 5%;
+				box-sizing: border-box;
+				font-family: $SofiaBold;
+				text-transform: uppercase;
+				font-size: 46px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
 	div.hero-image {
 		height: 490px;
 		background-position-y: -57px;
 		background-size: auto 100%;
 		margin: 0 auto;
-
 		div.woman {
 			height: 366px;
 			width: 360px;
@@ -73,6 +148,7 @@ div.hero-image {
 			top: 217px;
 			z-index: 10;
 			div.line {
+				display: block;
 				position: absolute;
 				width: 300px;
 				height: 70px;

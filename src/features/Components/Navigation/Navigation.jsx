@@ -13,24 +13,22 @@ const Navigation = () => {
 						<div className='hamburger'>
 							<div></div>
 						</div>
-						<p className='about-us-btn'>
-							<span
-								onClick={() => {
-									document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' });
-								}}>
-								За нас
-							</span>
-						</p>
+						<span
+							className='about-us-btn'
+							onClick={() => {
+								document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' });
+							}}>
+							За нас
+						</span>
 					</Col>
 					<Col>
-						<p className='contacts-btn'>
-							<span
-								onClick={() => {
-									document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
-								}}>
-								Контакти
-							</span>
-						</p>
+						<span
+							className='contacts-btn'
+							onClick={() => {
+								document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
+							}}>
+							Контакти
+						</span>
 					</Col>
 					<div className='logo'>
 						<div className='logo-arrow'></div>
