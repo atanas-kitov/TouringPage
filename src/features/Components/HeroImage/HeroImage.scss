@@ -133,6 +133,7 @@ div.hero-image {
 	div.hero-image {
 		height: 490px;
 		background-position-y: -57px;
+		background-position-x: 63%;
 		background-size: auto 100%;
 		margin: 0 auto;
 		div.woman {
@@ -152,20 +153,19 @@ div.hero-image {
 				position: absolute;
 				width: 300px;
 				height: 70px;
-				top: 110px;
-				left: -30px;
+				top: 135px;
+				left: 4px;
 				background-image: url('../../../../public/1.svg');
 				background-repeat: no-repeat;
-				background-size: 85%;
+				background-size: 70%;
 				transform: rotate(40deg);
 			}
 		}
-
 		div.title-wrapper {
 			width: 283px;
 			background-color: #33282d;
 			height: 154px;
-			top: 121px;
+			top: 155px;
 			left: 0;
 			position: absolute;
 			border-radius: 0 0 20px 0;
