@@ -27,6 +27,7 @@ const ContactUs = () => {
 								<button>Пиши ни</button>
 							</div>
 						</div>
+						{/* <MessengerChat /> */}
 					</Col>
 				</Row>
 			</Container>

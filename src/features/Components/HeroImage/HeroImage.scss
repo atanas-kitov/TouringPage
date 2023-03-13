@@ -137,6 +137,53 @@ div.hero-image {
 		background-size: auto 100%;
 		margin: 0 auto;
 		div.woman {
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			background-size: 110%;
+			background-position: center;
+			left: auto;
+			right: 5%;
+			top: 200px;
+			z-index: 10;
+			div.line {
+				display: none;
+			}
+		}
+		div.title-wrapper {
+			width: 283px;
+			background-color: #33282d;
+			height: 154px;
+			top: 155px;
+			left: 0;
+			position: absolute;
+			border-radius: 0 0 20px 0;
+			opacity: 0.8;
+			h1 {
+				display: flex;
+				align-items: center;
+				color: #fff;
+				height: 100%;
+				margin: 0;
+				padding: 19px 19px 18px 51px;
+				box-sizing: border-box;
+				font-family: $SofiaBold;
+				text-transform: uppercase;
+				font-size: 32px;
+				letter-spacing: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	div.hero-image {
+		height: 490px;
+		background-position-y: -57px;
+		background-position-x: 63%;
+		background-size: auto 100%;
+		margin: 0 auto;
+		div.woman {
 			height: 366px;
 			width: 360px;
 			position: absolute;
