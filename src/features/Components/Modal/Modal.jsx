@@ -22,7 +22,7 @@ const Modal = ({ visible, onCancelClick, card }) => {
 						<div className='modal-info'>
 							<div>
 								<img src='./time.svg' alt='time' />
-								<span>Времетраене: {card.time}часа</span>
+								<span>Времетраене: {card.time}ч.</span>
 							</div>
 							<div>
 								<img src='./wallet.svg' alt='price' />

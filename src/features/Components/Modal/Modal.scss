@@ -3,7 +3,7 @@
 div.modal-wrapper {
 	position: fixed;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	top: 0;
 	left: 0;
@@ -21,7 +21,6 @@ div.modal-wrapper {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-
 		div.modal-title {
 			position: relative;
 			background-color: $text;
@@ -53,7 +52,6 @@ div.modal-wrapper {
 				margin: auto 0;
 			}
 		}
-
 		div.modal-description {
 			width: 50%;
 			background-color: #fff;
@@ -104,7 +102,6 @@ div.modal-wrapper {
 			bottom: 0;
 			margin: auto 0;
 		}
-
 		div.modal-info {
 			width: 100%;
 			display: flex;
@@ -122,6 +119,45 @@ div.modal-wrapper {
 					letter-spacing: 0px;
 					padding: 10px 5px;
 					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991.98px) {
+	div.modal-wrapper {
+		div.modall {
+			width: 95%;
+			height: 80%;
+			div.modal-title {
+				h3 {
+					font-size: 24px;
+					line-height: 23px;
+				}
+				h3.activity {
+					padding-top: 20px;
+					box-sizing: border-box;
+				}
+
+				div.modal-background {
+				}
+			}
+			div.modal-description {
+			}
+			p {
+				font-size: 14px;
+				line-height: 23px;
+				padding: 0 3% 0 10%;
+			}
+			div.modal-info {
+				flex-direction: column;
+				align-items: center;
+				div {
+					span {
+						font-size: 16px;
+						line-height: 16px;
+					}
 				}
 			}
 		}
