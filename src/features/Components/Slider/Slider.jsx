@@ -26,7 +26,7 @@ const Slider = ({ galleryBackgrounds }) => {
 			swipeable={false}
 			draggable={false}
 			// showDots={windowSize <= 1024 ? true : false}
-			// showDots={true}
+			// showDots={false}
 			responsive={responsive}
 			ssr={true} // means to render carousel on server-side.
 			infinite={true}
